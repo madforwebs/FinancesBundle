@@ -5,27 +5,10 @@ namespace MadForWebs\BookingBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Booking
- *
- * @ORM\Table(name="booking")
- * @ORM\Entity(repositoryClass="MadForWebs\BookingBundle\Repository\BookingRepository")
+ * @ORM\MappedSuperclass
  */
 class Booking
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="BookingPass", inversedBy="bookings", cascade={"persist"})
-     * @ORM\JoinColumn(name="bookingPass", referencedColumnName="id", nullable=false)
-     */
-    private $bookingPass;
 
     /**
      * @var string
@@ -58,24 +41,6 @@ class Booking
     {
         return $this->id;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getBookingPass()
-    {
-        return $this->bookingPass;
-    }
-
-    /**
-     * @param mixed $bookingPass
-     */
-    public function setBookingPass($bookingPass)
-    {
-        $this->bookingPass = $bookingPass;
-    }
-
-
 
     /**
      * Set name

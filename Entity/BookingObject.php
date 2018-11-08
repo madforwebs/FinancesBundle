@@ -4,28 +4,12 @@ namespace MadForWebs\BookingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+
 /**
- * BookingObject
- *
- * @ORM\Table(name="booking_object")
- * @ORM\Entity(repositoryClass="MadForWebs\BookingBundle\Repository\BookingObjectRepository")
+ * @ORM\MappedSuperclass
  */
 class BookingObject
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
-
-    /**
-     * @ORM\OneToMany(targetEntity="BookingPass", mappedBy="bookingsPasses", cascade={"all"})
-     */
-    private $bookingsPasses;
-
     /**
      * @var \DateTime
      *
