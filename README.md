@@ -1,7 +1,7 @@
 CalendarBundle
 =============
 
-The `CalendarBundle` means easy-to-implement and feature-rich calendar in your Symfony application!
+The `BookingBundle` means easy-to-implement and feature-rich calendar in your Symfony application!
 
 ## Installation
 
@@ -33,7 +33,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new MadForWebs\CalendarBundle\CalendarBundle(),
+            new MadForWebs\BookingBundle\BookingBundle(),
         );
 
         // ...
