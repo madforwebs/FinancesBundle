@@ -1,6 +1,6 @@
 <?php
 
-namespace FinanciaBundle\Entity;
+namespace MadForWebs\FinancialBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

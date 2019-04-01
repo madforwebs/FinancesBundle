@@ -4,11 +4,11 @@
   "type": "symfony-bundle",
   "autoload": {
     "psr-4": {
-      "MadForWebs\\BookingBundle\\": ""
+      "MadForWebs\\FinancialBundle\\": ""
     }
   },
   "require": {
-    "symfony/framework-bundle": "~2.3|~3.0"
+    "symfony/framework-bundle": "~2.3|~3.2"
   },
   "license": "MIT",
   "authors": [

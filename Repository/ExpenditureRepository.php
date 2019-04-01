@@ -1,6 +1,6 @@
 <?php
 
-namespace FinancialBundle\Repository;
+namespace MadForWebs\FinancialBundle\Repository;
 
 /**
  * ExpenditureRepository
