@@ -1,6 +1,6 @@
 {
-  "name": "madforwebs/booking-bundle",
-  "description": "This bundle provides a bookingbundle for symfony2",
+  "name": "madforwebs/financial-bundle",
+  "description": "This bundle provides a financialbundle for symfony2",
   "type": "symfony-bundle",
   "autoload": {
     "psr-4": {
