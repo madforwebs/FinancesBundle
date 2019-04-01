@@ -1,6 +1,6 @@
 <?php
 
-namespace MadForWebs\BookingBundle;
+namespace MadForWebs\FinancialBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
