@@ -1,0 +1,27 @@
+core.admin.expenditure:
+  class: FinancialBundle\Admin\ExpenditureAdmin
+  arguments: [~, FinancialBundle\Entity\Expenditure, SonataAdminBundle:CRUD]
+  tags:
+    - { name: sonata.admin, manager_type: orm, group: admin, label: Expenditure }
+  public: true
+
+core.admin.provider:
+  class: FinancialBundle\Admin\ProviderAdmin
+  arguments: [~, FinancialBundle\Entity\Provider, SonataAdminBundle:CRUD]
+  tags:
+    - { name: sonata.admin, manager_type: orm, group: admin, label: Provider }
+  public: true
+
+core.admin.account:
+  class: FinancialBundle\Admin\AccountAdmin
+  arguments: [~, FinancialBundle\Entity\Account, SonataAdminBundle:CRUD]
+  tags:
+    - { name: sonata.admin, manager_type: orm, group: admin, label: Account }
+  public: true
+
+core.admin.income:
+  class: FinancialBundle\Admin\IncomeAdmin
+  arguments: [~, FinancialBundle\Entity\Income, SonataAdminBundle:CRUD]
+  tags:
+    - { name: sonata.admin, manager_type: orm, group: admin, label: Income }
+  public: true
