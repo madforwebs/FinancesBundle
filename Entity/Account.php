@@ -25,8 +25,6 @@ class Account
     private $balance;
 
 
-
-
     public function totalEarnings()
     {
         $sum = 0;
