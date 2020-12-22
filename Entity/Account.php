@@ -15,14 +15,14 @@ class Account
      *
      * @ORM\Column(name="name", type="string", length=255)
      */
-    private $name;
+    protected $name;
 
     /**
      * @var float
      *
      * @ORM\Column(name="balance", type="float",precision=2)
      */
-    private $balance;
+    protected $balance;
 
 
     public function totalEarnings()

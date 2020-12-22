@@ -16,14 +16,14 @@ class Provider
      *
      * @ORM\Column(name="name", type="string", length=255)
      */
-    private $name;
+    protected $name;
 
     /**
      * @var float
      *
      * @ORM\Column(name="irpf", type="float", nullable=true)
      */
-    private $irpf;
+    protected $irpf;
 
 
     /**
@@ -31,7 +31,7 @@ class Provider
      *
      * @ORM\Column(name="balance", type="float", nullable=true)
      */
-    private $balance;
+    protected $balance;
 
 
 

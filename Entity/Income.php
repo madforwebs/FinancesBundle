@@ -17,21 +17,21 @@ class Income
      *
      * @ORM\Column(name="concept", type="string", length=255, nullable=true)
      */
-    private $concept;
+    protected $concept;
 
     /**
      * @var float
      *
      * @ORM\Column(name="total", type="float")
      */
-    private $total;
+    protected $total;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date_income", type="datetime", nullable=true)
      */
-    private $dateIncome;
+    protected $dateIncome;
 
 
 
@@ -40,19 +40,19 @@ class Income
      * @var string
      * @ORM\Column(name="method", type="string", columnDefinition="enum('income','expenditure')" , nullable=false)
      */
-    private $method;
+    protected $method;
 
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
      */
-    private $createdAt;
+    protected $createdAt;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
      */
-    private $updatedAt;
+    protected $updatedAt;
 
 
     /**
