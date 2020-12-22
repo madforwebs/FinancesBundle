@@ -15,47 +15,47 @@ class CashFlow
      * @var string
      * @ORM\Column(name="concept", type="string", nullable=true)
      */
-    private $concept;
+    protected $concept;
 
     /**
      * @var float
      *
      * @ORM\Column(name="quantity", type="float")
      */
-    private $quantity;
+    protected $quantity;
 
     /**
      * @var string
      *
      * @ORM\Column(name="status", type="string", columnDefinition="enum('pending','paid')")
      */
-    private $status;
+    protected $status;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date_buy", type="datetime", nullable=true)
      */
-    private $dateBuy;
+    protected $dateBuy;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date_paid", type="datetime", nullable=true)
      */
-    private $datePaid;
+    protected $datePaid;
 
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
      */
-    private $createdAt;
+    protected $createdAt;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
      */
-    private $updatedAt;
+    protected $updatedAt;
 
 }
 
