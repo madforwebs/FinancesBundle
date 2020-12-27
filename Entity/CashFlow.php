@@ -59,5 +59,134 @@ class CashFlow
      */
     protected $updatedAt;
 
+    /**
+     * @return string
+     */
+    public function getConcept()
+    {
+        return $this->concept;
+    }
+
+    /**
+     * @param string $concept
+     */
+    public function setConcept($concept)
+    {
+        $this->concept = $concept;
+    }
+
+    /**
+     * @return float
+     */
+    public function getQuantity()
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param float $quantity
+     */
+    public function setQuantity($quantity)
+    {
+        $this->quantity = $quantity;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param string $status
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateBuy()
+    {
+        return $this->dateBuy;
+    }
+
+    /**
+     * @param \DateTime $dateBuy
+     */
+    public function setDateBuy($dateBuy)
+    {
+        $this->dateBuy = $dateBuy;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDatePaid()
+    {
+        return $this->datePaid;
+    }
+
+    /**
+     * @param \DateTime $datePaid
+     */
+    public function setDatePaid($datePaid)
+    {
+        $this->datePaid = $datePaid;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * @param mixed $createdAt
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * @param mixed $updatedAt
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+    }
+
+
+    /**
+     * @ORM\PrePersist()
+     */
+    public function prePersist()
+    {
+        $this->setCreatedAt(new \DateTime('now'));
+        $this->setUpdatedAt(new \DateTime('now'));
+    }
+
+    /**
+     * @ORM\PreUpdate()
+     */
+    public function preUpdate()
+    {
+        $this->setUpdatedAt(new \DateTime('now'));
+    }
 }
 
